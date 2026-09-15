@@ -1,15 +1,9 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/connect.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/connect",
-      "dest": "/api/connect.js"
+      "source": "/connect",
+      "destination": "/api/connect"
     }
   ]
 }
